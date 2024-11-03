@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1em;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+
+        .box {
+            background-color: #f4f4f4;
+            padding: 1em;
+            border: 1px solid #ddd;
+            flex: 1 1 calc(33.333% - 1em);
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+
+        /* Media Query for Tablets and Smaller Desktops */
+        @media (max-width: 992px) {
+            .box {
+                flex: 1 1 calc(50% - 1em);
+            }
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.2em;
+            }
+
+            .box {
+                flex: 1 1 100%;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Web Page</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="box">Content Box 1</div>
+            <div class="box">Content Box 2</div>
+            <div class="box">Content Box 3</div>
+            <div class="box">Content Box 4</div>
+            <div class="box">Content Box 5</div>
+            <div class="box">Content Box 6</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Responsive Page Footer</p>
+    </footer>
+</body>
+</html>
