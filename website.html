@@ -92,3 +92,19 @@
     </footer>
 </body>
 </html>
+
+
+Explanation
+Viewport Meta Tag:
+
+The <meta name="viewport" content="width=device-width, initial-scale=1.0"> tag is crucial for mobile responsiveness, ensuring the layout adapts to the device’s width.
+Flexbox for Layout:
+
+The .content class uses Flexbox (display: flex; flex-wrap: wrap;) to allow the boxes to wrap based on the available space. Each .box has a flexible width set by calc(33.333% - 1em), ensuring three boxes per row on larger screens.
+Media Queries:
+
+Tablets (max-width: 992px): Each .box switches to occupy half the width, resulting in two boxes per row on tablet screens.
+Mobile Devices (max-width: 600px): Each .box takes up the full width of the screen, stacking vertically for an optimal mobile view.
+Styling Adjustments:
+
+Font sizes and padding adjustments are added to make sure the header and footer text remain readable on smaller devices.
